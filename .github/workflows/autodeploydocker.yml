@@ -42,7 +42,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2.KEY }}
+          key: ${{ secrets.EC2_KEY }}
           script_stop: true
           script: |
           #dockerhub에 로그인 PRIVATE인 경우 로그인 필수 / PUBLIC인 경우 생략 가능
