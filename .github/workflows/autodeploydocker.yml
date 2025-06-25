@@ -46,8 +46,6 @@ jobs:
           script_stop: true
           script: |
           #dockerhub에 로그인 PRIVATE인 경우 로그인 필수 / PUBLIC인 경우 생략 가능
-#            echo ${{ secrets.DOCKER_USER}}
-#            docker login -u ${{ secrets.DOCKER_USER }} -- password
           #기존에 실행된 컨테이너 중지 및 삭제
             docker stop myweb || true
             docker rm myweb || true
